@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a3136;
+    color: #df8065;
+}
+.HP {
+    text-align: center;
+    padding: -6%;
+    color: #f9e9b3;
+
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #42604a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(52, 50, 50, 0.176);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: #1a3136;
+}
+
+.project-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #a6bc69;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project-info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+}
